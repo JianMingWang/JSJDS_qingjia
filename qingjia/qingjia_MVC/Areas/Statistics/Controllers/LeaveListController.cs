@@ -11,6 +11,8 @@ using System.Web.Script.Serialization;
 
 namespace qingjia_MVC.Areas.Statistics.Controllers
 {
+    #region 数据模型
+
     public class JsonModel
     {
         public ArrayList indexNameArr { get; set; }
@@ -30,6 +32,8 @@ namespace qingjia_MVC.Areas.Statistics.Controllers
         public string population { get; set; }
         public string reason { get; set; }
     }
+
+    #endregion
 
     public class LeaveListController : BaseController
     {
@@ -229,7 +233,6 @@ namespace qingjia_MVC.Areas.Statistics.Controllers
                 }
 
                 res.JsonRequestBehavior = JsonRequestBehavior.AllowGet;//允许使用GET方式获取，否则用GET获取是会报错
-                //res.Data = returnData.Count();
                 res.Data = returnData;
                 return res;
             }

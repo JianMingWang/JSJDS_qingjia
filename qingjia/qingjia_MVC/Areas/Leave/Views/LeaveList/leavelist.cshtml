@@ -15,6 +15,9 @@
     <script>
         var LeaveType = "AllLeave";
         var roleid = "";
+
+        var loading = 0;//1代表正在访问数据中
+
         //事件绑定
         $(document).ready(function () {
             roleid = $('#roleid').val();
@@ -82,13 +85,13 @@
                     //注意URL的格式
                     url: '/Leave/LeaveList/SearchClick?condition=' + LeaveType,
                     success: function (response) {
-                        notify('取消搜索！',0);
+                        notify('取消搜索！', 0);
                         $("#content").html(response);
                         checkDelete();
                         setRowNum();
                     },
                     error: function () {
-                        notify('发生错误！',2);
+                        notify('发生错误！', 2);
                     }
                 });
             });
@@ -129,12 +132,37 @@
             });
         });
 
+        //页面滚动事件
         $(window).scroll(function () {
-            if ((($(window).scrollTop() + $(window).height())) >= $(document).height()) {
-                //alert('滚动到底部');
-                console.log('滑到底部');
+            if (((($(window).scrollTop() + $(window).height()) + 1) >= $(document).height()) && loading == 0) {//1个像素点 
+                loading = 1;
+                console.log('开始访问数据');
+                //访问后台获取数据
+                $.ajax({
+                    //注意URL的格式
+                    url: '/Leave/LeaveList/ReLoadNext?leavetype=' + LeaveType + '&index=' + 21 + '&num=' + 20,//ReLoadNext
+                    dataType: 'json',
+                    type: 'post',
+                    success: function (response) {
+                        alert('加载成功！');
+                        console.log(response);
+                        DataToTable(response);//data转换为html的table
+                        console.log('获取数据之后才执行');
+                        loading = 0;//允许再次请求数据
+                    },
+                    error: function () {
+                        alert('发生错误！');
+                        loading = 0;//允许在此请求数据
+                    }
+                });
+                console.log('先执行');
             }
         });
+
+        function DataToTable(response) {
+            //对数据处理，转换为html中的table中的tr行 并返回到界面
+
+        }
         
 
         //是否允许撤回请假
