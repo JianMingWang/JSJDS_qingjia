@@ -163,6 +163,7 @@
             //对数据处理，转换为html中的table中的tr行 并返回到界面
 
             var data, num, leaveType;
+            var returnHtml = '';
 
             data = jsonData["data"];
             num = jsonData["num"];
@@ -175,12 +176,16 @@
                 alert('已加载全部数据！更新了' + num + '条数据！');
             }
             else {
-                alert('未知错误');
+                alert('更新了' + num + '调数据！');
             }
 
             console.log(data);
             console.log(num);
             console.log(leaveType);
+
+            for (var k in data) {
+                console.log(data[k]['ID']);
+            }
         }
         
 
