@@ -1141,6 +1141,8 @@ namespace qingjia_MVC.Areas.Leave.Controllers
             }
             #endregion
 
+            LL_Count(TopList);
+
             model.TopTotalList = changeLLModel(TopTotalList);
             model.TopList = changeLLModel(TopList);
 
