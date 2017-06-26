@@ -98,7 +98,7 @@
                     title: '发送短信',
                     formType: 2
                 }, function (value, index, e) {
-                    alert(value);
+                    //alert(value);
                     //发送短信Ajax
                     $.ajax({
                         url: '/GradeAddress/SendMessage?text=' + value + '&tel=' + tel,
@@ -119,13 +119,9 @@
                 event.stopPropagation();
             });
 
-
-
             var tr = $('.table>tbody>tr');
             //tr.filter(':odd').slideUp(20);
             Pages(tr, 10, 1);
-
-
         });
 
         function GetClassInfo(ClassName) {

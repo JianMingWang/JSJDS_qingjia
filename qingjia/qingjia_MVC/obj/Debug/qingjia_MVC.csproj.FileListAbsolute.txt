@@ -70,7 +70,6 @@ C:\Users\Wong Jianming\Desktop\计算机大赛\JSJDS_qingjia\qingjia\qingjia_MVC
 C:\Users\Wong Jianming\Desktop\计算机大赛\JSJDS_qingjia\qingjia\qingjia_MVC\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\Wong Jianming\Desktop\计算机大赛\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.dll
 C:\Users\Wong Jianming\Desktop\计算机大赛\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.pdb
-C:\Users\Wong Jianming\Desktop\计算机大赛\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.csprojResolveAssemblyReference.cache
 C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_MVC\bin\qingjia_MVC.dll.config
 C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_MVC\bin\qingjia_MVC.dll
 C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_MVC\bin\qingjia_MVC.pdb
@@ -144,3 +143,4 @@ C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_
 C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.csprojResolveAssemblyReference.cache
 C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.dll
 C:\Users\Wong Jianming\Desktop\比赛代码修改\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.pdb
+C:\Users\Wong Jianming\Desktop\计算机大赛\JSJDS_qingjia\qingjia\qingjia_MVC\obj\Debug\qingjia_MVC.csprojResolveAssemblyReference.cache
